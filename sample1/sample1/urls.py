@@ -19,12 +19,10 @@ from django.contrib.auth import views as auth_views
 from myapp import views as myapp_views
 
 urlpatterns = [
-    url(r'^login/$', auth_views.login,
-        {'template_name': 'accounts/login.html'},
+    url(r'^login/$', auth_views.LoginView.as_view(),
         name='login'
     ),
-    url(r'^logout/$', auth_views.logout,
-        {'template_name': 'accounts/logout.html'},
+    url(r'^logout/$', auth_views.LogoutView.as_view(),
         name='logout'
     ),
     url(r'^auth/$', myapp_views.auth_view,
