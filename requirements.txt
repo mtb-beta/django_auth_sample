@@ -1,4 +1,4 @@
 django==1.11
 social-auth-app-django==2.1.0
-python-social-authi==0.3.6
+python-social-auth==0.3.6
 python-decouple==3.1
