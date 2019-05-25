@@ -1,3 +1,3 @@
 # django_auth_sample
 
-this repositry django auth sample app.
+This repositry django auth sample app.
